@@ -1,0 +1,23 @@
+body{
+	text-align: center;	
+	color: white;
+	font-family: 'Arial', sans-serif;
+	background: #2D1B36;
+}
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 3em;
+}
+div{
+	border-bottom: 2px dashed white;
+	padding-bottom: 4em ;
+}
+input{
+	padding: 1em;
+	border: none;
+	background: #888888;
+	border-radius: 10px;
+	font-size: 1.3em;
+}

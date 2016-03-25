@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>Input</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<h1>HTML5: Inputs Types</h1>
+	<div>
+		<h2>color</h2>
+		<label for="SelectColor">Elige un Color</label>
+		<input type="color" id="SelectColor">
+		<button id="btnShowColor">Mostrar Color</button>
+	</div>
+	<div class="box">
+		<h2>date</h2>
+		<p>Normal</p>
+		<input type="date" name="" id="SelectDate1" />  
+		<p>Limitando parametros: min="2015-12-1"  max="2015-12-31"</p>
+		<input type="date" name="" id="SelectDate2" min="2015-12-1" max="2015-12-31"/>  
+	</div>
+	<div>
+		<h2>datatime-local</h2>
+		<p>El input datetime-local le permite al usuario seleccionar una fecha y hora sin zona horaria). Este input es perfecto para especificar el tiempo preciso de algún día.</p>
+		<input type="datetime-local" name="" id="" /> 
+		<p>
+			Antes teníamos input datatime que nos permitía poner la zona horaria, pero este ha sido removido del estándar HTML, así que ahora solo tenemos datetime-local.
+		</p>
+	</div>
+	<div>
+		<h2>email</h2>
+		<p>
+			El input email solo permite entradas de tipo email (correo electrónico)
+		</p>
+		<input type="email" name="" id="" /> 
+	</div>
+	<div>
+		<h2>month</h2>
+		<p>
+			El input month le permite al usuario seleccionar un mes, a través una especie de calendario al igual que con el input date.
+		</p>
+		<input type="month" name="" id="" /> 
+	</div>
+	<div>
+		<h2>number</h2>
+		<p>
+			El input number le permite al usuario seleccionar un valor numérico, no le permite al usuario agregar ningún otro valor que no sea un número.
+		</p>
+		<input type="number" name="" id="" />
+		<p>
+			Con los atributos min y max podemos especificar un rango mínimo y máximo del el cual el usuario no puede disminuir o rebasar.
+		</p>
+		<input type="number" name="" id="" min="0" max="10" />  
+	</div>
+	<div>
+		<h2>range</h2>
+		<p>
+		 	El input range representa un valor numérico dentro de un rango determinado, algo así como el input number, a diferencia que a este lo vemos como una especie de control deslizante.
+		</p>
+		<p>
+			Nota: Con input range no es importante el valor exacto que vamos a recibir.
+		</p>
+		<input type="range" name="" id="Valuerange" min="0" max="100"/>  
+
+	</div>
+	<div>
+		<h2>search</h2>
+		<p>
+			El input search simplemente se utiliza para especificar un campo de búsqueda, pero realmente se comporta igual a un input text, no hay mucho misterio con este input realmente.
+			La unica diferencia es que tiene un x incluida para borrar lo escrito
+		</p>
+		<input type="search" name="" id="" />  
+
+	</div>
+	<div>
+		<h2>tel</h2>
+		<p>
+			El input tel se utiliza para especificar un campo que debe de contener un número de teléfono, pero al igual que pasa con input search, este se comporta igual que un input text.
+		</p>
+		<input type="tel" name="" id="" />  
+	</div>
+	<div>
+		<h2>
+			time
+		</h2>
+		<p>
+			El input time le permite al usuario seleccionar una hora en específico, ya sea a través del teclado o de las flechas se le presentan dentro del input.
+		</p>
+		<input type="time" name="" id="" />  
+	</div>
+	<div>
+		<h2>url</h2>
+		<p>
+			El input url solo permite entradas de tipo url (sitios web), es decir, que si se introduce un valor que no sea una url, este no lo va a dejar continuar.
+		</p>
+		<input type="url" name="" id="" />  
+	</div>
+	<div>
+		<h2>week</h2>
+		<p>
+			El input week le permite al usuario seleccionar una semana, a través una especie de calendario al igual que con el input date.
+		</p>
+		<input type="week" name="" id="" />  
+	</div>
+	<script src="./js/code.js"></script>
+</body>
+</html>
